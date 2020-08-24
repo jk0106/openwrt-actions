@@ -113,7 +113,7 @@ jobs:
     - name: Download latest config
       run: |
         cd openwrt
-        curl -skL https://raw.githubusercontent.com/Lienol/openwrt-actions/master/user/${{matrix.target}}/config.diff -o .config
+        curl -skL https://raw.githubusercontent.com/jk0106/openwrt-actions/master/user/${{matrix.target}}/config.diff -o .config
         
     - name: Download package
       id: package
